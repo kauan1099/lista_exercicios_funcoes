@@ -1,0 +1,29 @@
+<script>
+    /*
+    PROBLEMA: CALCULAR ÁREA E PERÍMETRO DE UM CÍRCULO
+    Desenvovla um programa que contenha uma função que calcule a área e o perímetro de um círculo.
+    Fórmulas:
+    Área: A = π * r²
+    Perímetro: P = 2 * π * r
+    */
+
+    // ENTRADA
+
+    let raio = Number(prompt("Informe o raio do círculo:"));
+
+    // PROCESSAMENTO
+
+    function a(b) {
+        const pi = 3.14;
+        let area = pi * b * b;
+        let perimetro = 2 * pi * b;
+        return { area, perimetro };
+    }
+
+    let resultado = a(raio);
+
+    // SAÍDA
+
+    alert("área do circulo: " + resultado.area.toFixed(2) + "\nperimetro do circulo: " + resultado.perimetro.toFixed(2))
+
+</script>
